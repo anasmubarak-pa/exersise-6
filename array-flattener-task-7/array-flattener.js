@@ -2,7 +2,7 @@ function flattenArray(array,return_array=[])
 {
     for(let element of array)
     {
-        if(typeof element=='number')
+        if(!(Array.isArray(element)))
         {
             return_array.push(element)
         }
